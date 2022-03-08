@@ -92,7 +92,7 @@ const Home = () => {
                 .then((res) => res.json())
                 .then((data) => setFbanks(data));
         }
-    }, [roomId]);
+    }, [roomId, frooms]);
 
     const changeCompany = (e) => {
         setCompanyId(e.target.value);
